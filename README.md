@@ -1,12 +1,12 @@
-Purple Team Web Application Security Assessment
+# **Purple Team Web Application Security Assessment**
 
-Objective
+## **Objective**
 
 The Purple Team Web Application Security Assessment project aimed to demonstrate and analyze common web application vulnerabilities in a controlled lab environment. The primary focus was to perform coordinated offensive and defensive testing against an intentionally vulnerable web application, with red team activities used to identify and exploit weaknesses and blue team analysis used to understand detection opportunities, attack visibility, and remediation strategies.
 
 This project provided hands-on experience with web application security testing, HTTP request manipulation, vulnerability assessment, and purple team collaboration. As Team Lead and Red Team Lead, I directed team efforts, provided walkthroughs and troubleshooting support, and personally executed 12 attacks across SQL injection, cross-site scripting, and broken authentication categories.
 
-Skills Learned
+## **Skills Learned**
 
 - Practical understanding of web application security testing concepts.
 - Hands-on experience identifying and demonstrating SQL injection vulnerabilities.
@@ -19,7 +19,7 @@ Skills Learned
 - Improved understanding of how offensive activity can support blue team detection and alerting.
 - Development of technical leadership, mentoring, troubleshooting, and team coordination skills.
 
-Tools Used
+## **Tools Used**
 
 - Burp Suite for intercepting, modifying, and replaying HTTP requests.
 - Browser DevTools for inspecting client-side behavior, API requests, tokens, and application responses.
@@ -28,13 +28,13 @@ Tools Used
 - Web browser for interacting with the application and validating attack behavior.
 - Documentation tools for organizing findings, screenshots, explanations, and remediation recommendations.
 
-Steps
+## **Steps**
 
-Project Environment Setup:
+### **Project Environment Setup:**
 
 First we hosted OWASP Juice Shop on one of our virtual machines and connected multiple other virtual machines to it using TailScale.
 
-SQL Injection Testing:
+### **SQL Injection Testing:**
 
 These screenshots shows SQL injection testing being performed against a vulnerable input field or API endpoint. The objective was to demonstrate how unsanitized user input could alter backend database queries in the controlled lab environment.
 
@@ -45,11 +45,11 @@ These screenshots shows SQL injection testing being performed against a vulnerab
 <img width="1901" height="730" alt="Screenshot 2026-04-15 124358" src="https://github.com/user-attachments/assets/741ce536-1e80-4d9e-9075-79ca650d2b87" />
 <img width="429" height="644" alt="Screenshot 2026-04-15 124647" src="https://github.com/user-attachments/assets/f05ef11a-d3ec-4c83-bb0d-20d36e10deeb" />
 
-SQL Injection Result:
+### **SQL Injection Result:**
 
 The results demonstrated how vulnerable query logic could expose or manipulate application data when proper input validation and parameterized queries are not used.
 
-Cross-Site Scripting Payload Testing:
+### **Cross-Site Scripting Payload Testing:**
 
 These screenshots shows cross-site scripting testing against a vulnerable field or endpoint. The purpose was to demonstrate how unsafe handling of user-controlled input could allow script execution in the browser.
 
@@ -61,11 +61,11 @@ These screenshots shows cross-site scripting testing against a vulnerable field 
 <img width="1833" height="707" alt="XSStest1soundcloudPayLoad" src="https://github.com/user-attachments/assets/c0849d1d-8d34-47d2-967a-60ee119a119d" />
 <img width="1032" height="262" alt="frame number" src="https://github.com/user-attachments/assets/84293b23-5f75-4492-913b-d3aec7585b69" />
 
-Cross-Site Scripting Execution:
+### **Cross-Site Scripting Execution:**
 
 The finding demonstrated the importance of output encoding, input validation, and secure rendering of user-controlled data.
 
-Broken Authentication Testing:
+### **Broken Authentication Testing:**
 
 These screenshots shows testing against an authentication or account management workflow. The objective was to identify weaknesses in authentication logic, session handling, account lifecycle controls, or password management behavior.
 
@@ -81,11 +81,11 @@ These screenshots shows testing against an authentication or account management 
 <img width="621" height="425" alt="Screenshot 2026-04-15 110218" src="https://github.com/user-attachments/assets/ba76f574-4522-4dbf-8f5d-c9e03190a994" />
 <img width="1806" height="835" alt="Screenshot 2026-04-15 110311" src="https://github.com/user-attachments/assets/bb26acb5-a03a-4b3e-be7f-83ec15fda51f" />
 
-Broken Authentication Result:
+### **Broken Authentication Result:**
 
 The findings demonstrated how weak authentication logic could potentially allow unauthorized access, improper account changes, or abuse of account management functionality.
 
-Browser DevTools Analysis
+### **Browser DevTools Analysis**
 
 These screenshots show Browser DevTools being used to inspect requests, responses, application storage, or client-side behavior. DevTools helped support testing by revealing how the application handled data in the browser. We were also able to use a team member's prior software dev knowledge of backend environments to craft a specific GET request to change passwords.
 
@@ -93,6 +93,6 @@ These screenshots show Browser DevTools being used to inspect requests, response
 <img width="1889" height="283" alt="Screenshot 2026-04-15 101950" src="https://github.com/user-attachments/assets/d20115c7-d70f-4930-9f12-73d156000db7" />
 <img width="1877" height="224" alt="Screenshot 2026-04-15 103559" src="https://github.com/user-attachments/assets/0c135ce9-82ec-4f94-86b3-9df744db0044" />
 
-Ref 14: Final Project Documentation
+### **Final Project Documentation**
 
 https://drive.google.com/file/d/1DI645P2yMJY6_3jHmfKJgzom-5_fQF1D/view?usp=sharing
